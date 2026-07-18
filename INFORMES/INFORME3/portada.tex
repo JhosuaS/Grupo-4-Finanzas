@@ -1,0 +1,40 @@
+\thispagestyle{empty}
+
+% Dibujo del doble marco exacto de Word
+\begin{tikzpicture}[remember picture, overlay]
+    % Línea externa gruesa
+    \draw[line width=2.5pt] 
+        ([shift={(1.5cm,-1.5cm)}]current page.north west) 
+        rectangle 
+        ([shift={(-1.5cm,1.5cm)}]current page.south east);
+    
+    % Línea interna delgada
+    \draw[line width=0.8pt] 
+        ([shift={(1.7cm,-1.7cm)}]current page.north west) 
+        rectangle 
+        ([shift={(-1.7cm,1.7cm)}]current page.south east);
+\end{tikzpicture}
+
+\vspace*{2cm}
+\begin{center}
+    % Bloque del Título entre líneas delgadas
+    \noindent\rule{0.85\textwidth}{0.8pt}\\[0.6cm]
+    {\Huge\bfseries ANÁLISIS DE LA DINÁMICA DE PRECIOS DEL ÍNDICE NASDAQ-100}\\[0.3cm]
+    \noindent\rule{0.85\textwidth}{0.8pt}\\[2.5cm]
+    
+    % Subtítulo centrado
+    {\Large\bfseries AVANCE DE PROYECTO}\\[4.5cm]
+    
+    % Tabla de metadatos alineada a la izquierda en el tercio inferior
+    \begin{flushleft}
+    \hspace*{1.5cm}
+    \begin{tabular}{ll}
+        \textbf{ASIGNATURA:} & MÉTODOS NUMÉRICOS \\ [0.6cm]
+        \textbf{INTEGRANTES:} & ERICK TOAPANTA \\
+                              & JOSÉ PALLARES \\
+                              & JHOSUA SAA \\ [0.6cm]
+        \textbf{FECHA DE ENTREGA:} & MIERCOLES, 22 DE JULIO DE 2026
+    \end{tabular}
+    \end{flushleft}
+\end{center}
+\newpage
